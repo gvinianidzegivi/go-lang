@@ -16,8 +16,8 @@ func main() {
 
 	// for regular output
 	fmt.Println(x)
-	// for formatted output - v for general value, d for number
-	fmt.Printf("%v", x)
+	// for formatted output - v for general value, d for number, T for typeof value
+	fmt.Printf("%T", x)
 	// more flexible string outputs, //! it returns string
 	result := fmt.Sprintf("My name is %v", y)
 	fmt.Println(result)

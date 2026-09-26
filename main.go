@@ -1,14 +1,25 @@
 package main
 
+// fmt is package for output/terminal
 import "fmt"
 
+// default value is "" string
+// it can be used inside/outside function
+var x string
+
 func main() {
-	var x string = "string"
-	var y rune = '$'
-	// var z byte = "Hi "
-	var t int = 2411
-	const name string = ""
-	// name = "Pivi"
-	fmt.Println(x, y, t)
-    
-}  
+	// we can reassign it later just with = operator
+	x = "My name is"
+
+	// shorthand to create variable, only used inside funcs
+	y := "Givi"
+
+	// for regular output
+	fmt.Println(x)
+	// for formatted output - v for general value, d for number
+	fmt.Printf("%v", x)
+	// more flexible string outputs, //! it returns string
+	result := fmt.Sprintf("My name is %v", y)
+	fmt.Println(result)
+
+}
